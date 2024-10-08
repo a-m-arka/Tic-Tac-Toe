@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: rgb(252, 143, 0);
+    text-align: center;
+    font-family:cursive;
+}
+
+.container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 70vmin;
+    width: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+
+.box{
+    height: 20vmin;
+    width: 20vmin;
+    border-radius: 2vmin;
+    border: none;
+    background-color: rgb(233, 134, 5);
+    box-shadow: 0 0 1rem rgba(203, 186, 0, 0.5);
+    font-size: 10vmin;
+    font-family: cursive;
+}
+
+#restart{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #c3ff00;
+    border-radius: 10vmin;
+    box-shadow: 0 0 1rem rgb(226, 251, 0);
+    font-family: cursive;
+}
+
+.popup{
+    height: 45vh;
+    width: 60vh;
+    background-color: rgb(233, 134, 5);
+    color: black;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 20px 0 0;
+    visibility: hidden;
+    transition: transform 0.5s, top 0.5s;
+    box-shadow: 0 0 1rem rgba(203, 186, 0, 0.5);
+}
+
+.openPopup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup h2{
+    margin: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    box-shadow: 0 0 1rem black;
+    background-color: rgb(210, 200, 14);
+}
+
+.popup h1{
+    margin: 5px;
+    font-family:cursive;
+    font-size: 60px;
+}
+
+.popup button{
+    width: 90%;
+    height: 50px;
+    background-color: black;
+    color: rgb(233, 134, 5);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.hide{
+    visibility: hidden;
+}
